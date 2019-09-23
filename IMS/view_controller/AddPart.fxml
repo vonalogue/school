@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IMS.view_controller.AddPartController">
+   <children>
+      <BorderPane prefHeight="439.0" prefWidth="462.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox prefHeight="467.0" prefWidth="462.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="68.0" prefWidth="462.0">
+                     <children>
+                        <Label prefHeight="51.0" prefWidth="109.0" text="Add Part">
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <font>
+                              <Font name="Dubai Medium" size="21.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="inHouse" mnemonicParsing="false" text="In-House">
+                           <padding>
+                              <Insets left="45.0" top="15.0" />
+                           </padding>
+                        </RadioButton>
+                        <RadioButton fx:id="outsourced" mnemonicParsing="false" text="Outsourced">
+                           <padding>
+                              <Insets left="45.0" top="15.0" />
+                           </padding>
+                        </RadioButton>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="217.0" prefWidth="462.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="19.0">
+                           <children>
+                              <Label text="ID">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Name">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Stock">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Price">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="companyOrMachineIdLabel" text="Machine ID">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" top="6.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="211.0" prefWidth="272.0" spacing="10.0">
+                           <children>
+                              <TextField fx:id="idField" prefHeight="31.0" prefWidth="76.0" />
+                              <TextField fx:id="nameField" />
+                              <TextField fx:id="stockField" />
+                              <TextField fx:id="priceField" />
+                              <TextField fx:id="companyOrMachineIdField" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="73.0" prefWidth="442.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="54.0" text="Min">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="minField" prefHeight="31.0" prefWidth="69.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="Max">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="maxField" prefHeight="27.0" prefWidth="69.0">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <AnchorPane prefHeight="81.0" prefWidth="462.0">
+                     <children>
+                        <Button fx:id="saveButton" layoutX="304.0" layoutY="23.0" mnemonicParsing="false" onAction="#addPart" text="Save" />
+                        <Button cancelButton="true" layoutX="373.0" layoutY="23.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
