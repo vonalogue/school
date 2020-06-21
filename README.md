@@ -7,7 +7,7 @@ IMS stands for "Inventory Management System," a desktop program I wrote in Java 
 
 - ### ROSTER
 
-This is a console program written in C++. It stores a hypothetical student roster and provides functions in the code that allow the user (i.e., programmer) to manipulate the roster.
+This is a console program written in C++. It stores a hypothetical student roster and provides functions in the code to allow the user (i.e., programmer) to manipulate the roster.
 
 
 
